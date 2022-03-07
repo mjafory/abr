@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Audio Book Reader</title>
+    <script defer src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
+    <script src="app.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: steelblue;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        video {
+            border: 2px solid white;
+            padding: 5px;
+        }
+
+        pre {
+            text-align: center;
+            padding: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>An Audio Book Reader</h1>
+
+    <center>
+     <video width="720" height="560" autoplay muted></video>
+     <br>
+        <button id="click_button">Click or Press spacebar</button>
+    </center>
+
+    <pre data-text style="font-size: 12px; font-family: inherit; width: 100%; white-space: pre-wrap;"></pre>
+
+</body>
+
+</html>
